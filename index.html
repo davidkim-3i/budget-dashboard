@@ -901,7 +901,37 @@ function rTable(data){
 
 document.addEventListener('DOMContentLoaded',()=>{
   try{ const s=localStorage.getItem('3i_api_key'); if(s) document.getElementById('inp-key').value=s; }catch(e){}
+  if(checkOAuthRedirect()) return;
+  initGoogleAuth();
 });
+
+function checkOAuthRedirect(){
+  const hash = window.location.hash;
+  if(!hash || !hash.includes('id_token')) return false;
+  history.replaceState(null, '', window.location.pathname);
+  const params = new URLSearchParams(hash.substring(1));
+  const idToken = params.get('id_token');
+  if(!idToken){ showError('로그인 실패: 토큰을 찾을 수 없습니다.'); return true; }
+  const payload = parseJwt(idToken);
+  if(!payload){ showError('로그인 실패: 토큰을 읽을 수 없습니다.'); return true; }
+  const email = payload.email || '';
+  if(!email.endsWith('@3i.ai') && !email.endsWith('@getpivo.com')){
+    showError('⚠ 3i.ai 또는 getpivo.com 계정으로만 로그인할 수 있습니다.');
+    return true;
+  }
+  API_KEY = 'AIzaSyA80iNrDYCPrcj-EoC2OqkG8fch-o56K2E';
+  showLoading('부서 정보를 확인하는 중...');
+  fetchUserDept(email).then(dept => {
+    USER = {
+      email, name: payload.name || email, picture: payload.picture || '',
+      dept: dept || null,
+      role: (dept === '전체관리자') ? 'admin' : (dept ? 'user' : 'admin')
+    };
+    try{ localStorage.setItem('3i_oauth_token', API_KEY); localStorage.setItem('3i_user', JSON.stringify(USER)); }catch(e){}
+    loadData();
+  });
+  return true;
+}
 </script>
 </body>
 </html>
