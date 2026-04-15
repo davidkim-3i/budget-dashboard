@@ -371,29 +371,21 @@ function startGoogleSignIn(){
 }
 
 function openOAuthPopup(){
+  const redirectUri = 'https://davidkim-3i.github.io/budget-dashboard/';
+  const nonce = Math.random().toString(36).substring(2);
+  try{ sessionStorage.setItem('oauth_nonce', nonce); }catch(e){}
   const params = new URLSearchParams({
     client_id: OAUTH_CLIENT_ID,
-    redirect_uri: 'https://accounts.google.com/gsi/select',
-    response_type: 'token id_token',
+    redirect_uri: redirectUri,
+    response_type: 'id_token',
     scope: 'openid email profile',
-    nonce: Math.random().toString(36).substring(2),
+    nonce: nonce,
     prompt: 'select_account',
-    state: 'dashboard_login',
+    state: 'login',
+    hd: '3i.ai',
   });
-  // 팝업 대신 Google OAuth 직접 호출
-  const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?${params}`;
-  const popup = window.open(authUrl,'googleSignIn','width=500,height=600,scrollbars=yes');
-  if(!popup){
-    alert('팝업이 차단됐습니다. 브라우저에서 팝업을 허용해주세요.');
-    resetSignInBtn();
-  }
-  // 팝업 응답 감지
-  const timer = setInterval(()=>{
-    if(popup.closed){
-      clearInterval(timer);
-      resetSignInBtn();
-    }
-  },500);
+  const authUrl = 'https://accounts.google.com/o/oauth2/v2/auth?' + params.toString();
+  window.location.href = authUrl;
 }
 
 function connectWithApiKey(){
