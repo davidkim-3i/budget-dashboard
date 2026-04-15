@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3i 예산 결산 대시보드 2026</title>
+<title>3i ìì° ê²°ì° ëìë³´ë 2026</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -92,13 +92,13 @@ footer{text-align:center;padding:16px;color:var(--text3);font-size:11px;border-t
 
 <div id="screen-connect">
   <div class="c-logo">
-    <div class="c-logo-icon">📊</div>
-    <div><div class="c-logo-text">3i Budget Dashboard 2026</div><div class="c-logo-sub">부서예산 결산 현황</div></div>
+    <div class="c-logo-icon">ð</div>
+    <div><div class="c-logo-text">3i Budget Dashboard 2026</div><div class="c-logo-sub">ë¶ììì° ê²°ì° íí©</div></div>
   </div>
   <div class="c-card" style="text-align:center;max-width:440px">
-    <div style="font-size:44px;margin-bottom:14px">🔐</div>
-    <h2 style="margin-bottom:8px">로그인</h2>
-    <p style="margin-bottom:24px">3i.ai Google 계정으로 로그인하면<br>소속 부서의 예산 현황을 확인할 수 있습니다.</p>
+    <div style="font-size:44px;margin-bottom:14px">ð</div>
+    <h2 style="margin-bottom:8px">ë¡ê·¸ì¸</h2>
+    <p style="margin-bottom:24px">3i.ai Google ê³ì ì¼ë¡ ë¡ê·¸ì¸íë©´<br>ìì ë¶ìì ìì° íí©ì íì¸í  ì ììµëë¤.</p>
     <button onclick="startGoogleSignIn()" id="google-signin-btn" style="
   display:flex;align-items:center;justify-content:center;gap:12px;
   width:100%;padding:13px 20px;
@@ -116,37 +116,37 @@ footer{text-align:center;padding:16px;color:var(--text3);font-size:11px;border-t
     <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
     <path fill="none" d="M0 0h48v48H0z"/>
   </svg>
-  <span id="signin-btn-text">Google 계정으로 로그인</span>
+  <span id="signin-btn-text">Google ê³ì ì¼ë¡ ë¡ê·¸ì¸</span>
 </button>
     <div id="c-error" style="min-height:20px;margin-top:8px"></div>
     <div id="c-error" style="min-height:18px;font-size:12px;color:var(--red);margin-top:8px"></div>
 
     <div style="margin:20px 0;display:flex;align-items:center;gap:10px">
       <div style="flex:1;height:1px;background:var(--border)"></div>
-      <span style="font-size:11px;color:var(--text3)">또는 API 키로 연결</span>
+      <span style="font-size:11px;color:var(--text3)">ëë API í¤ë¡ ì°ê²°</span>
       <div style="flex:1;height:1px;background:var(--border)"></div>
     </div>
 
-    <input id="inp-key" class="c-input" placeholder="Google Sheets API 키 (AIzaSy...)" style="text-align:left"/>
-    <button class="btn btn-p" onclick="connectWithApiKey()" style="width:100%;justify-content:center;margin-bottom:16px">🔗 API 키로 연결</button>
+    <input id="inp-key" class="c-input" placeholder="Google Sheets API í¤ (AIzaSy...)" style="text-align:left"/>
+    <button class="btn btn-p" onclick="connectWithApiKey()" style="width:100%;justify-content:center;margin-bottom:16px">ð API í¤ë¡ ì°ê²°</button>
 
     <div style="padding-top:16px;border-top:1px solid var(--border)">
-      <button class="btn btn-g" onclick="useSample()" style="width:100%;justify-content:center">✨ 샘플 데이터로 미리보기</button>
+      <button class="btn btn-g" onclick="useSample()" style="width:100%;justify-content:center">â¨ ìí ë°ì´í°ë¡ ë¯¸ë¦¬ë³´ê¸°</button>
     </div>
   </div>
 </div>
 
-<div id="screen-loading"><div class="spinner"></div><div class="loading-msg" id="loading-msg">데이터를 불러오는 중...</div></div>
+<div id="screen-loading"><div class="spinner"></div><div class="loading-msg" id="loading-msg">ë°ì´í°ë¥¼ ë¶ë¬ì¤ë ì¤...</div></div>
 
 <header id="main-header">
-  <div class="h-left"><div class="h-icon">📊</div><div class="h-title">3i Budget Dashboard 2026</div></div>
+  <div class="h-left"><div class="h-icon">ð</div><div class="h-title">3i Budget Dashboard 2026</div></div>
   <div class="h-right">
-    <div class="sync-badge"><div class="sync-dot"></div><span id="sync-lbl">연결됨</span></div>
-    <span style="font-size:10px;color:var(--text3);font-family:var(--mono)" id="last-upd">—</span>
-    <span id="auto-badge" style="display:none;font-size:10px;color:var(--teal);background:var(--surface2);border:1px solid rgba(20,184,166,.3);padding:4px 10px;border-radius:20px;font-family:var(--mono)">⏱ <span id="countdown">10:00</span></span>
+    <div class="sync-badge"><div class="sync-dot"></div><span id="sync-lbl">ì°ê²°ë¨</span></div>
+    <span style="font-size:10px;color:var(--text3);font-family:var(--mono)" id="last-upd">â</span>
+    <span id="auto-badge" style="display:none;font-size:10px;color:var(--teal);background:var(--surface2);border:1px solid rgba(20,184,166,.3);padding:4px 10px;border-radius:20px;font-family:var(--mono)">â± <span id="countdown">10:00</span></span>
     <div style="display:flex;gap:2px;background:var(--surface2);border:1px solid var(--border2);border-radius:7px;overflow:hidden"><button id="btn-ko" class="h-btn" onclick="setLang('ko')" style="border-radius:0;border:none;padding:6px 11px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff">KO</button><button id="btn-en" class="h-btn" onclick="setLang('en')" style="border-radius:0;border:none;padding:6px 11px">EN</button></div>
-    <button class="h-btn" id="btn-refresh" onclick="refreshData()">↻ 새로고침</button>
-    <button class="h-btn" onclick="showConnect()">🔗 재연결</button>
+    <button class="h-btn" id="btn-refresh" onclick="refreshData()">â» ìë¡ê³ ì¹¨</button>
+    <button class="h-btn" onclick="showConnect()">ð ì¬ì°ê²°</button>
   </div>
 </header>
 
@@ -154,33 +154,33 @@ footer{text-align:center;padding:16px;color:var(--text3);font-size:11px;border-t
   <div id="alerts-wrap" class="alerts"></div>
   <div class="top-bar">
     <div class="view-tabs">
-      <button class="vt active" onclick="setView('dept',this)" data-tkey="vDept">🏢 부서별</button>
-      <button class="vt" onclick="setView('type',this)" data-tkey="vType">📂 지출종류별</button>
-      <button class="vt" onclick="setView('entity',this)" data-tkey="vEntity">🏦 법인별</button>
-      <button class="vt" onclick="setView('month',this)" data-tkey="vMonth">📅 월별</button>
+      <button class="vt active" onclick="setView('dept',this)" data-tkey="vDept">ð¢ ë¶ìë³</button>
+      <button class="vt" onclick="setView('type',this)" data-tkey="vType">ð ì§ì¶ì¢ë¥ë³</button>
+      <button class="vt" onclick="setView('entity',this)" data-tkey="vEntity">ð¦ ë²ì¸ë³</button>
+      <button class="vt" onclick="setView('month',this)" data-tkey="vMonth">ð ìë³</button>
     </div>
-    <select id="f-month"><option value="">전체 월</option></select>
-    <select id="f-dept"><option value="">전체 부서</option></select>
-    <select id="f-type"><option value="">전체 지출종류</option></select>
+    <select id="f-month"><option value="">ì ì²´ ì</option></select>
+    <select id="f-dept"><option value="">ì ì²´ ë¶ì</option></select>
+    <select id="f-type"><option value="">ì ì²´ ì§ì¶ì¢ë¥</option></select>
   </div>
   <div class="kpi-row" id="kpi-row"></div>
   <div id="chart-area"></div>
-  <div class="sec-t" id="tbl-title">상세 내역</div>
+  <div class="sec-t" id="tbl-title">ìì¸ ë´ì­</div>
   <div class="cc"><div class="tw"><table class="tbl" id="main-table"></table></div></div>
 </div>
 
 <footer id="main-footer" style="display:none">
-  3i Budget Dashboard 2026 · 종합 시트 단일 연결 · 데이터는 브라우저에서만 처리됩니다
-  <span style="margin-left:12px;color:var(--accent);cursor:pointer" onclick="refreshData()">↻ 새로고침</span>
+  3i Budget Dashboard 2026 Â· ì¢í© ìí¸ ë¨ì¼ ì°ê²° Â· ë°ì´í°ë ë¸ë¼ì°ì ììë§ ì²ë¦¬ë©ëë¤
+  <span style="margin-left:12px;color:var(--accent);cursor:pointer" onclick="refreshData()">â» ìë¡ê³ ì¹¨</span>
 </footer>
 
 <script>
-// ══ CONFIG ═══════════════════════════════════════
+// ââ CONFIG âââââââââââââââââââââââââââââââââââââââ
 const OAUTH_CLIENT_ID = '830951737158-jkjsch6etpc1g5gml0uklsnoph3sc3bk.apps.googleusercontent.com';
 const SHEET_ID = '1quCWbL74qhgnVYH0tRVH-F4pIAO3rYIbvfUoiDR3ERw';
-const MAPPING_TAB = '직원 매핑'; // 부서-이메일 매핑 탭
+const MAPPING_TAB = 'ì§ì ë§¤í'; // ë¶ì-ì´ë©ì¼ ë§¤í í­
 
-// 종합 시트 내 부서별 탭 (API로 확인한 정확한 이름)
+// ì¢í© ìí¸ ë´ ë¶ìë³ í­ (APIë¡ íì¸í ì íí ì´ë¦)
 const DEPT_TABS = [
   'plan-monthly GA import',
   'plan-monthly HR import',
@@ -195,7 +195,7 @@ const DEPT_TABS = [
   'plan-monthly IT import',
 ];
 
-// 탭 이름 → 부서 표시명
+// í­ ì´ë¦ â ë¶ì íìëª
 const TAB_TO_DEPT = {
   'plan-monthly GA import':'GA',
   'plan-monthly HR import':'HR',
@@ -210,137 +210,137 @@ const TAB_TO_DEPT = {
   'plan-monthly IT import':'IT',
 };
 
-// ══ STATE ════════════════════════════════════════
+// ââ STATE ââââââââââââââââââââââââââââââââââââââââ
 let RAW=[], CHARTS={}, VIEW='dept', API_KEY='';
 let USER=null; // {email, name, picture, dept, role}
-// ══ LANG ═══════════════════════════════════════
+// ââ LANG âââââââââââââââââââââââââââââââââââââââ
 let LANG = 'ko';
 
 const T = {
-  // 헤더
+  // í¤ë
   title:        {ko:'3i Budget Dashboard 2026', en:'3i Budget Dashboard 2026'},
-  loginTitle:   {ko:'로그인', en:'Sign In'},
-  loginDesc:    {ko:'3i.ai Google 계정으로 로그인하면\n소속 부서의 예산 현황을 확인할 수 있습니다.', en:'Sign in with your 3i.ai Google account\nto view your department budget.'},
-  sampleBtn:    {ko:'✨ 샘플 데이터로 미리보기', en:'✨ Preview with sample data'},
-  signout:      {ko:'로그아웃', en:'Sign out'},
-  connected:    {ko:'종합 시트 연결됨',          en:'Master Sheet Connected'},
-  sample:       {ko:'샘플 데이터',               en:'Sample Data'},
-  refresh:      {ko:'↻ 새로고침',               en:'↻ Refresh'},
-  reconnect:    {ko:'🔗 재연결',                en:'🔗 Reconnect'},
+  loginTitle:   {ko:'ë¡ê·¸ì¸', en:'Sign In'},
+  loginDesc:    {ko:'3i.ai Google ê³ì ì¼ë¡ ë¡ê·¸ì¸íë©´\nìì ë¶ìì ìì° íí©ì íì¸í  ì ììµëë¤.', en:'Sign in with your 3i.ai Google account\nto view your department budget.'},
+  sampleBtn:    {ko:'â¨ ìí ë°ì´í°ë¡ ë¯¸ë¦¬ë³´ê¸°', en:'â¨ Preview with sample data'},
+  signout:      {ko:'ë¡ê·¸ìì', en:'Sign out'},
+  connected:    {ko:'ì¢í© ìí¸ ì°ê²°ë¨',          en:'Master Sheet Connected'},
+  sample:       {ko:'ìí ë°ì´í°',               en:'Sample Data'},
+  refresh:      {ko:'â» ìë¡ê³ ì¹¨',               en:'â» Refresh'},
+  reconnect:    {ko:'ð ì¬ì°ê²°',                en:'ð Reconnect'},
 
-  // 뷰 탭
-  vDept:   {ko:'🏢 부서별',    en:'🏢 By Dept'},
-  vType:   {ko:'📂 지출종류별', en:'📂 By Category'},
-  vEntity: {ko:'🏦 법인별',    en:'🏦 By Entity'},
-  vMonth:  {ko:'📅 월별',      en:'📅 By Month'},
+  // ë·° í­
+  vDept:   {ko:'ð¢ ë¶ìë³',    en:'ð¢ By Dept'},
+  vType:   {ko:'ð ì§ì¶ì¢ë¥ë³', en:'ð By Category'},
+  vEntity: {ko:'ð¦ ë²ì¸ë³',    en:'ð¦ By Entity'},
+  vMonth:  {ko:'ð ìë³',      en:'ð By Month'},
 
-  // 필터
-  fAllMonth:  {ko:'전체 월',      en:'All Months'},
-  fAllDept:   {ko:'전체 부서',    en:'All Depts'},
-  fAllType:   {ko:'전체 지출종류', en:'All Categories'},
+  // íí°
+  fAllMonth:  {ko:'ì ì²´ ì',      en:'All Months'},
+  fAllDept:   {ko:'ì ì²´ ë¶ì',    en:'All Depts'},
+  fAllType:   {ko:'ì ì²´ ì§ì¶ì¢ë¥', en:'All Categories'},
 
-  // KPI 라벨
-  kpiTotalBudget: {ko:'연간 총 예산',      en:'Total Annual Budget'},
-  kpiActual:      {ko:'누적 집행액',        en:'Total Spent'},
-  kpiRemain:      {ko:'잔여 예산',          en:'Remaining Budget'},
-  kpiOverBudget:  {ko:'예산 초과',          en:'Over Budget'},
-  kpiAvailable:   {ko:'집행 가능',          en:'Available'},
-  kpiRateUntil:   {ko:'월까지 소진율',      en:'Burn Rate Until Mo.'},
-  kpiOverDept:    {ko:'초과 부서 / 주의 부서', en:'Over Depts / Warning'},
-  kpiOverDeptSub: {ko:'100% 초과 / 90~100%',  en:'100% Over / 90~100%'},
-  kpiOverType:    {ko:'초과 계정과목',       en:'Over Categories'},
-  kpiOverTypeSub: {ko:'예산 100% 초과 항목', en:'Items over 100% budget'},
-  kpiItems:       {ko:'데이터 항목',         en:'Data Rows'},
-  kpiDepts:       {ko:'개 부서',             en:'depts'},
-  kpiKrwBase:     {ko:'원화환산 기준',       en:'KRW Basis'},
-  kpiActualKrw:   {ko:'실적 원화환산',       en:'Actual in KRW'},
+  // KPI ë¼ë²¨
+  kpiTotalBudget: {ko:'ì°ê° ì´ ìì°',      en:'Total Annual Budget'},
+  kpiActual:      {ko:'ëì  ì§íì¡',        en:'Total Spent'},
+  kpiRemain:      {ko:'ìì¬ ìì°',          en:'Remaining Budget'},
+  kpiOverBudget:  {ko:'ìì° ì´ê³¼',          en:'Over Budget'},
+  kpiAvailable:   {ko:'ì§í ê°ë¥',          en:'Available'},
+  kpiRateUntil:   {ko:'ìê¹ì§ ìì§ì¨',      en:'Burn Rate Until Mo.'},
+  kpiOverDept:    {ko:'ì´ê³¼ ë¶ì / ì£¼ì ë¶ì', en:'Over Depts / Warning'},
+  kpiOverDeptSub: {ko:'100% ì´ê³¼ / 90~100%',  en:'100% Over / 90~100%'},
+  kpiOverType:    {ko:'ì´ê³¼ ê³ì ê³¼ëª©',       en:'Over Categories'},
+  kpiOverTypeSub: {ko:'ìì° 100% ì´ê³¼ í­ëª©', en:'Items over 100% budget'},
+  kpiItems:       {ko:'ë°ì´í° í­ëª©',         en:'Data Rows'},
+  kpiDepts:       {ko:'ê° ë¶ì',             en:'depts'},
+  kpiKrwBase:     {ko:'ìííì° ê¸°ì¤',       en:'KRW Basis'},
+  kpiActualKrw:   {ko:'ì¤ì  ìííì°',       en:'Actual in KRW'},
 
-  // 경고
-  alertDeptTitle: {ko:'🏢 부서별 예산 경고',    en:'🏢 Dept Budget Alerts'},
-  alertTypeTitle: {ko:'📂 계정과목별 예산 경고', en:'📂 Category Budget Alerts'},
-  alertTagDept:   {ko:'부서',     en:'Dept'},
-  alertTagType:   {ko:'계정과목', en:'Category'},
-  alertOver:      {ko:'소진 — 초과',              en:'burned — over by'},
-  alertSos:       {ko:'소진 — 잔여',              en:'burned — remaining'},
-  alertWarn:      {ko:'소진 — 잔여',              en:'burned — remaining'},
-  alertSosSub:    {ko:'(5% 미만 긴급)',           en:'(< 5% left, urgent)'},
-  alertWarnSub:   {ko:'(10% 미만 주의)',          en:'(< 10% left, warning)'},
-  alertOk:        {ko:'모든 부서 및 계정과목의 예산이 정상 범위입니다.', en:'All departments and categories are within budget.'},
+  // ê²½ê³ 
+  alertDeptTitle: {ko:'ð¢ ë¶ìë³ ìì° ê²½ê³ ',    en:'ð¢ Dept Budget Alerts'},
+  alertTypeTitle: {ko:'ð ê³ì ê³¼ëª©ë³ ìì° ê²½ê³ ', en:'ð Category Budget Alerts'},
+  alertTagDept:   {ko:'ë¶ì',     en:'Dept'},
+  alertTagType:   {ko:'ê³ì ê³¼ëª©', en:'Category'},
+  alertOver:      {ko:'ìì§ â ì´ê³¼',              en:'burned â over by'},
+  alertSos:       {ko:'ìì§ â ìì¬',              en:'burned â remaining'},
+  alertWarn:      {ko:'ìì§ â ìì¬',              en:'burned â remaining'},
+  alertSosSub:    {ko:'(5% ë¯¸ë§ ê¸´ê¸)',           en:'(< 5% left, urgent)'},
+  alertWarnSub:   {ko:'(10% ë¯¸ë§ ì£¼ì)',          en:'(< 10% left, warning)'},
+  alertOk:        {ko:'ëª¨ë  ë¶ì ë° ê³ì ê³¼ëª©ì ìì°ì´ ì ì ë²ììëë¤.', en:'All departments and categories are within budget.'},
 
-  // 차트 제목
-  cDeptBar:    {ko:'부서별 예산 vs 실적',     en:'Budget vs Actual by Dept'},
-  cDeptBurn:   {ko:'부서별 소진율',           en:'Burn Rate by Dept'},
-  cMonthly:    {ko:'월별 추이',               en:'Monthly Trend'},
-  cBudgetPie:  {ko:'예산 비중',               en:'Budget Share'},
-  cActualPie:  {ko:'실적 비중',               en:'Actual Share'},
-  cTypeBar:    {ko:'지출종류별 예산 vs 실적', en:'Budget vs Actual by Category'},
-  cTypeBurn:   {ko:'지출종류별 소진율',       en:'Burn Rate by Category'},
-  cEntBar:     {ko:'법인별 예산 vs 실적',     en:'Budget vs Actual by Entity'},
-  cEntLine:    {ko:'법인별 월별 추이',        en:'Monthly Trend by Entity'},
-  cEntBudget:  {ko:'법인별 예산 비중',        en:'Entity Budget Share'},
-  cEntActual:  {ko:'법인별 실적 비중',        en:'Entity Actual Share'},
-  cMonBar:     {ko:'월별 예산 vs 실적',       en:'Budget vs Actual by Month'},
-  cCumLine:    {ko:'누적 집행 추이',          en:'Cumulative Spend'},
-  cMonBurn:    {ko:'월별 소진율',             en:'Burn Rate by Month'},
-  cMonStack:   {ko:'월별 지출종류 구성',      en:'Monthly Category Breakdown'},
+  // ì°¨í¸ ì ëª©
+  cDeptBar:    {ko:'ë¶ìë³ ìì° vs ì¤ì ',     en:'Budget vs Actual by Dept'},
+  cDeptBurn:   {ko:'ë¶ìë³ ìì§ì¨',           en:'Burn Rate by Dept'},
+  cMonthly:    {ko:'ìë³ ì¶ì´',               en:'Monthly Trend'},
+  cBudgetPie:  {ko:'ìì° ë¹ì¤',               en:'Budget Share'},
+  cActualPie:  {ko:'ì¤ì  ë¹ì¤',               en:'Actual Share'},
+  cTypeBar:    {ko:'ì§ì¶ì¢ë¥ë³ ìì° vs ì¤ì ', en:'Budget vs Actual by Category'},
+  cTypeBurn:   {ko:'ì§ì¶ì¢ë¥ë³ ìì§ì¨',       en:'Burn Rate by Category'},
+  cEntBar:     {ko:'ë²ì¸ë³ ìì° vs ì¤ì ',     en:'Budget vs Actual by Entity'},
+  cEntLine:    {ko:'ë²ì¸ë³ ìë³ ì¶ì´',        en:'Monthly Trend by Entity'},
+  cEntBudget:  {ko:'ë²ì¸ë³ ìì° ë¹ì¤',        en:'Entity Budget Share'},
+  cEntActual:  {ko:'ë²ì¸ë³ ì¤ì  ë¹ì¤',        en:'Entity Actual Share'},
+  cMonBar:     {ko:'ìë³ ìì° vs ì¤ì ',       en:'Budget vs Actual by Month'},
+  cCumLine:    {ko:'ëì  ì§í ì¶ì´',          en:'Cumulative Spend'},
+  cMonBurn:    {ko:'ìë³ ìì§ì¨',             en:'Burn Rate by Month'},
+  cMonStack:   {ko:'ìë³ ì§ì¶ì¢ë¥ êµ¬ì±',      en:'Monthly Category Breakdown'},
 
-  // 테이블
-  tblDept:     {ko:'부서별 결산 상세',    en:'Detail by Department'},
-  tblType:     {ko:'지출종류별 결산',     en:'Summary by Category'},
-  tblEntity:   {ko:'법인별 결산',         en:'Summary by Entity'},
-  tblMonth:    {ko:'월별 결산',           en:'Summary by Month'},
-  colBudget:   {ko:'예산 (원화)',         en:'Budget (KRW)'},
-  colActual:   {ko:'실적 (원화)',         en:'Actual (KRW)'},
-  colDiff:     {ko:'차이',               en:'Variance'},
-  colBurn:     {ko:'소진율',             en:'Burn Rate'},
-  colTotal:    {ko:'합계',               en:'Total'},
+  // íì´ë¸
+  tblDept:     {ko:'ë¶ìë³ ê²°ì° ìì¸',    en:'Detail by Department'},
+  tblType:     {ko:'ì§ì¶ì¢ë¥ë³ ê²°ì°',     en:'Summary by Category'},
+  tblEntity:   {ko:'ë²ì¸ë³ ê²°ì°',         en:'Summary by Entity'},
+  tblMonth:    {ko:'ìë³ ê²°ì°',           en:'Summary by Month'},
+  colBudget:   {ko:'ìì° (ìí)',         en:'Budget (KRW)'},
+  colActual:   {ko:'ì¤ì  (ìí)',         en:'Actual (KRW)'},
+  colDiff:     {ko:'ì°¨ì´',               en:'Variance'},
+  colBurn:     {ko:'ìì§ì¨',             en:'Burn Rate'},
+  colTotal:    {ko:'í©ê³',               en:'Total'},
 
   // chart legend
-  legendBudget: {ko:'예산', en:'Budget'},
-  legendActual: {ko:'실적', en:'Actual'},
-  legendCumBgt: {ko:'누적 예산', en:'Cum. Budget'},
-  legendCumAct: {ko:'누적 실적', en:'Cum. Actual'},
-  legendBurnRate:{ko:'소진율(%)', en:'Burn Rate (%)'},
+  legendBudget: {ko:'ìì°', en:'Budget'},
+  legendActual: {ko:'ì¤ì ', en:'Actual'},
+  legendCumBgt: {ko:'ëì  ìì°', en:'Cum. Budget'},
+  legendCumAct: {ko:'ëì  ì¤ì ', en:'Cum. Actual'},
+  legendBurnRate:{ko:'ìì§ì¨(%)', en:'Burn Rate (%)'},
 };
 
 function t(key){ return T[key]?.[LANG] ?? T[key]?.ko ?? key; }
 
 function setLang(lang){
   LANG = lang;
-  // 토글 버튼 스타일
+  // í ê¸ ë²í¼ ì¤íì¼
   const ON  = 'linear-gradient(135deg,var(--accent),var(--accent2))';
   const OFF = 'var(--surface2)';
   document.getElementById('btn-ko').style.background = lang==='ko' ? ON : OFF;
   document.getElementById('btn-ko').style.color = lang==='ko' ? '#fff' : 'var(--text2)';
   document.getElementById('btn-en').style.background = lang==='en' ? ON : OFF;
   document.getElementById('btn-en').style.color = lang==='en' ? '#fff' : 'var(--text2)';
-  // 헤더 텍스트
+  // í¤ë íì¤í¸
   const sl = document.getElementById('sync-lbl');
-  if(sl) sl.textContent = sl.textContent.includes('샘플')||sl.textContent.includes('Sample') ? t('sample') : t('connected');
-  // 뷰 탭
+  if(sl) sl.textContent = sl.textContent.includes('ìí')||sl.textContent.includes('Sample') ? t('sample') : t('connected');
+  // ë·° í­
   document.querySelectorAll('.vt[data-tkey]').forEach(b=>{ b.textContent=t(b.dataset.tkey); });
   const signinTxt = document.getElementById('signin-btn-text');
-  if(signinTxt) signinTxt.textContent = lang==='ko'?'Google 계정으로 로그인':'Sign in with Google';
-  // 필터 첫 번째 옵션
+  if(signinTxt) signinTxt.textContent = lang==='ko'?'Google ê³ì ì¼ë¡ ë¡ê·¸ì¸':'Sign in with Google';
+  // íí° ì²« ë²ì§¸ ìµì
   [['f-month','fAllMonth'],['f-dept','fAllDept'],['f-type','fAllType']].forEach(([id,key])=>{
     const sel=document.getElementById(id); if(sel&&sel.options[0]) sel.options[0].text=t(key);
   });
-  // 새로고침 / 재연결 버튼
+  // ìë¡ê³ ì¹¨ / ì¬ì°ê²° ë²í¼
   document.querySelectorAll('.h-btn').forEach(b=>{
-    if(b.id==='btn-refresh') b.textContent=LANG==='ko'?'↻ 새로고침':'↻ Refresh';
-    if(b.onclick && b.onclick.toString().includes('signOut')) b.textContent=LANG==='ko'?'로그아웃':'Sign out';
-    if(b.textContent.includes('재연결')||b.textContent.includes('Reconnect')) b.textContent=t('reconnect');
+    if(b.id==='btn-refresh') b.textContent=LANG==='ko'?'â» ìë¡ê³ ì¹¨':'â» Refresh';
+    if(b.onclick && b.onclick.toString().includes('signOut')) b.textContent=LANG==='ko'?'ë¡ê·¸ìì':'Sign out';
+    if(b.textContent.includes('ì¬ì°ê²°')||b.textContent.includes('Reconnect')) b.textContent=t('reconnect');
   });
-  // 대시보드 전체 다시 렌더링 (차트 제목, 테이블, KPI, 알림 등)
+  // ëìë³´ë ì ì²´ ë¤ì ë ëë§ (ì°¨í¸ ì ëª©, íì´ë¸, KPI, ìë¦¼ ë±)
   if(RAW.length>0) render();
 }
 
 const now=new Date(), CUR_MONTH=now.getMonth()+1;
 
-// ══ UTILS ════════════════════════════════════════
-const krw=v=>{const n=Math.abs(Math.round(v));if(n>=100000000)return(v<0?'-':'')+(n/1e8).toFixed(1)+'억';if(n>=10000)return(v<0?'-':'')+(n/1e4).toFixed(0)+'만';return Math.round(v).toLocaleString('ko')+'원'};
+// ââ UTILS ââââââââââââââââââââââââââââââââââââââââ
+const krw=v=>{const n=Math.abs(Math.round(v));if(n>=100000000)return(v<0?'-':'')+(n/1e8).toFixed(1)+'ìµ';if(n>=10000)return(v<0?'-':'')+(n/1e4).toFixed(0)+'ë§';return Math.round(v).toLocaleString('ko')+'ì'};
 const pct=(a,b)=>b>0?a/b*100:0;
-const num=v=>parseFloat(String(v||'').replace(/[,₩\s]/g,''))||0;
+const num=v=>parseFloat(String(v||'').replace(/[,â©\s]/g,''))||0;
 const gBy=(arr,k)=>arr.reduce((a,r)=>{(a[r[k]]??=[]).push(r);return a},{});
 const sum=(arr,k)=>arr.reduce((s,r)=>s+(num(r[k])||0),0);
 const PC=p=>p>100?'var(--red)':p>95?'var(--orange)':p>90?'var(--yellow)':'var(--teal)';
@@ -348,7 +348,7 @@ const PCL=p=>p>100?'cv':p>95?'cs':p>90?'cw2':'co';
 const RCL=p=>p>100?'ro':p>95?'rs':p>90?'rw':'';
 const PAL=['#3b82f6','#6366f1','#14b8a6','#22c55e','#eab308','#f97316','#ef4444','#a855f7','#ec4899','#06b6d4','#84cc16'];
 
-// ══ SCREENS ══════════════════════════════════════
+// ââ SCREENS ââââââââââââââââââââââââââââââââââââââ
 function showConnect(){
   document.getElementById('screen-connect').style.display='flex';
   ['screen-loading','screen-dashboard','main-header','main-footer'].forEach(id=>document.getElementById(id).style.display='none');
@@ -357,11 +357,11 @@ function showConnect(){
 
 function startGoogleSignIn(){
   const btn = document.getElementById('google-signin-btn');
-  if(btn){ btn.disabled=true; document.getElementById('signin-btn-text').textContent=LANG==='ko'?'로그인 중...':'Signing in...'; }
+  if(btn){ btn.disabled=true; document.getElementById('signin-btn-text').textContent=LANG==='ko'?'ë¡ê·¸ì¸ ì¤...':'Signing in...'; }
   if(window.google?.accounts?.id){
     google.accounts.id.prompt((notification)=>{
       if(notification.isNotDisplayed()||notification.isSkippedMoment()){
-        // One Tap 팝업이 막힌 경우 → OAuth 팝업 직접 열기
+        // One Tap íìì´ ë§í ê²½ì° â OAuth íì ì§ì  ì´ê¸°
         openOAuthPopup();
       }
     });
@@ -380,14 +380,14 @@ function openOAuthPopup(){
     prompt: 'select_account',
     state: 'dashboard_login',
   });
-  // 팝업 대신 Google OAuth 직접 호출
+  // íì ëì  Google OAuth ì§ì  í¸ì¶
   const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?${params}`;
   const popup = window.open(authUrl,'googleSignIn','width=500,height=600,scrollbars=yes');
   if(!popup){
-    alert('팝업이 차단됐습니다. 브라우저에서 팝업을 허용해주세요.');
+    alert('íìì´ ì°¨ë¨ëìµëë¤. ë¸ë¼ì°ì ìì íìì íì©í´ì£¼ì¸ì.');
     resetSignInBtn();
   }
-  // 팝업 응답 감지
+  // íì ìëµ ê°ì§
   const timer = setInterval(()=>{
     if(popup.closed){
       clearInterval(timer);
@@ -399,10 +399,10 @@ function openOAuthPopup(){
 function connectWithApiKey(){
   const key = document.getElementById('inp-key').value.trim();
   const err = document.getElementById('c-error');
-  if(!key||key.length<20){ err.textContent='⚠ API 키를 입력하세요 (AIzaSy... 형식)'; return; }
+  if(!key||key.length<20){ err.textContent='â  API í¤ë¥¼ ìë ¥íì¸ì (AIzaSy... íì)'; return; }
   err.textContent='';
   API_KEY = key;
-  USER = {email:'api@3i.ai', name:'API 연결', picture:'', dept:null, role:'admin'};
+  USER = {email:'api@3i.ai', name:'API ì°ê²°', picture:'', dept:null, role:'admin'};
   try{ localStorage.setItem('3i_api_key', key); }catch(e){}
   loadData();
 }
@@ -411,7 +411,7 @@ function resetSignInBtn(){
   const btn = document.getElementById('google-signin-btn');
   const txt = document.getElementById('signin-btn-text');
   if(btn){ btn.disabled=false; }
-  if(txt) txt.textContent = LANG==='ko'?'Google 계정으로 로그인':'Sign in with Google';
+  if(txt) txt.textContent = LANG==='ko'?'Google ê³ì ì¼ë¡ ë¡ê·¸ì¸':'Sign in with Google';
 }
 
 function renderSignInButton(){
@@ -425,8 +425,8 @@ function renderSignInButton(){
       locale: LANG==='ko'?'ko':'en'
     });
   } else {
-    // GSI 아직 로드 안됨 - 수동 버튼 표시
-    btnEl.innerHTML = '<button onclick="manualGoogleSignIn()" style="display:flex;align-items:center;gap:10px;background:#fff;color:#3c4043;border:none;border-radius:4px;padding:10px 20px;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;width:300px;justify-content:center"><img src=\"https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg\" width=18 height=18><span>Google 계정으로 로그인</span></button>';
+    // GSI ìì§ ë¡ë ìë¨ - ìë ë²í¼ íì
+    btnEl.innerHTML = '<button onclick="manualGoogleSignIn()" style="display:flex;align-items:center;gap:10px;background:#fff;color:#3c4043;border:none;border-radius:4px;padding:10px 20px;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;width:300px;justify-content:center"><img src=\"https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg\" width=18 height=18><span>Google ê³ì ì¼ë¡ ë¡ê·¸ì¸</span></button>';
   }
 }
 
@@ -443,7 +443,7 @@ function onGsiLoad(){
     auto_select: false,
     cancel_on_tap_outside: false,
   });
-  // 저장된 세션 확인
+  // ì ì¥ë ì¸ì íì¸
   const savedToken = localStorage.getItem('3i_oauth_token');
   const savedUser  = localStorage.getItem('3i_user');
   if(savedToken && savedUser){
@@ -459,56 +459,56 @@ function onGsiLoad(){
   }
   showConnect();
 }
-function showLoading(msg){document.getElementById('screen-connect').style.display='none';document.getElementById('screen-loading').style.display='flex';document.getElementById('loading-msg').textContent=msg||'로딩 중...'}
+function showLoading(msg){document.getElementById('screen-connect').style.display='none';document.getElementById('screen-loading').style.display='flex';document.getElementById('loading-msg').textContent=msg||'ë¡ë© ì¤...'}
 function showDash(lbl){document.getElementById('screen-loading').style.display='none';document.getElementById('screen-dashboard').style.display='block';document.getElementById('main-header').style.display='flex';document.getElementById('main-footer').style.display='block';document.getElementById('sync-lbl').textContent=lbl||t('connected');document.getElementById('last-upd').textContent=now.toLocaleDateString('ko',{month:'2-digit',day:'2-digit'})+' '+now.toLocaleTimeString('ko',{hour:'2-digit',minute:'2-digit'});startAutoRefresh()}
 
-// ══ CONNECT ══════════════════════════════════════
+// ââ CONNECT ââââââââââââââââââââââââââââââââââââââ
 function connectDashboard(){
-  // OAuth 방식 - API 키 입력 불필요, 직접 loadData 호출
+  // OAuth ë°©ì - API í¤ ìë ¥ ë¶íì, ì§ì  loadData í¸ì¶
   loadData();
 }
 
-// ── Google OAuth 초기화 (DOMContentLoaded에서 호출)
+// ââ Google OAuth ì´ê¸°í (DOMContentLoadedìì í¸ì¶)
 function initGoogleAuth(){
-  // GSI 스크립트가 이미 로드됐으면 onGsiLoad 직접 호출
+  // GSI ì¤í¬ë¦½í¸ê° ì´ë¯¸ ë¡ëëì¼ë©´ onGsiLoad ì§ì  í¸ì¶
   if(window.google?.accounts?.id){
     onGsiLoad();
   } else {
-    // 아직 로드 안됨 - 로그인 화면만 표시하고 onGsiLoad 대기
+    // ìì§ ë¡ë ìë¨ - ë¡ê·¸ì¸ íë©´ë§ íìíê³  onGsiLoad ëê¸°
     showConnect();
   }
 }
 
-// ── JWT 디코딩 (서버 없이 클라이언트에서)
+// ââ JWT ëì½ë© (ìë² ìì´ í´ë¼ì´ì¸í¸ìì)
 function parseJwt(token){
   try{ return JSON.parse(atob(token.split('.')[1].replace(/-/g,'+').replace(/_/g,'/'))); }
   catch(e){ return null; }
 }
 
-// ── 로그인 콜백
+// ââ ë¡ê·¸ì¸ ì½ë°±
 async function handleCredentialResponse(response){
   const payload = parseJwt(response.credential);
-  if(!payload){ showError('로그인 실패: 인증 정보를 확인할 수 없습니다.'); return; }
+  if(!payload){ showError('ë¡ê·¸ì¸ ì¤í¨: ì¸ì¦ ì ë³´ë¥¼ íì¸í  ì ììµëë¤.'); return; }
 
   const email = payload.email || '';
   if(!email.endsWith('@3i.ai') && !email.endsWith('@getpivo.com')){
-    showError('⚠ 3i.ai 또는 getpivo.com 계정으로만 로그인할 수 있습니다.');
+    showError('â  3i.ai ëë getpivo.com ê³ì ì¼ë¡ë§ ë¡ê·¸ì¸í  ì ììµëë¤.');
     return;
   }
 
-  // ID 토큰을 API 키 대신 사용하지 않고, 기존 API 키는 고정값 사용
+  // ID í í°ì API í¤ ëì  ì¬ì©íì§ ìê³ , ê¸°ì¡´ API í¤ë ê³ ì ê° ì¬ì©
   API_KEY = 'AIzaSyA80iNrDYCPrcj-EoC2OqkG8fch-o56K2E';
 
-  showLoading('사용자 정보를 확인하는 중...');
+  showLoading('ì¬ì©ì ì ë³´ë¥¼ íì¸íë ì¤...');
 
-  // 직원 매핑 탭에서 부서 조회
+  // ì§ì ë§¤í í­ìì ë¶ì ì¡°í
   const dept = await fetchUserDept(email);
 
   USER = {
     email, name: payload.name||email,
     picture: payload.picture||'',
     dept: dept || null,
-    role: dept === '전체관리자' ? 'admin' : 'user'
+    role: dept === 'ì ì²´ê´ë¦¬ì' ? 'admin' : 'user'
   };
 
   try{
@@ -519,22 +519,22 @@ async function handleCredentialResponse(response){
   loadData();
 }
 
-// ── 직원 매핑 탭에서 이메일로 부서 조회
+// ââ ì§ì ë§¤í í­ìì ì´ë©ì¼ë¡ ë¶ì ì¡°í
 async function fetchUserDept(email){
   try{
-    const url = \`https://sheets.googleapis.com/v4/spreadsheets/\${SHEET_ID}/values/\${encodeURIComponent("'"+MAPPING_TAB+"'")}?key=\${API_KEY}\`;
+    const encoded = encodeURIComponent("'"+MAPPING_TAB+"'");
+    const url = 'https://sheets.googleapis.com/v4/spreadsheets/'+SHEET_ID+'/values/'+encoded+'?key='+API_KEY;
     const res = await fetch(url);
     const json = await res.json();
     const rows = json.values || [];
     for(let i=1; i<rows.length; i++){
       const row = rows[i];
-      // C열(인덱스2)이 이메일, B열(인덱스1)이 부서, E열(인덱스4)이 권한
       if(row[2] && row[2].trim().toLowerCase() === email.toLowerCase()){
         if(row[4] && row[4].trim() === 'admin') return '전체관리자';
         return row[1] ? row[1].trim() : null;
       }
     }
-    return null; // 매핑 없으면 null (전체관리자로 처리 또는 접근 제한)
+    return null;
   }catch(e){ return null; }
 }
 
@@ -554,7 +554,7 @@ function signOut(){
 }
 
 async function loadData(){
-  showLoading('종합 시트에서 데이터를 불러오는 중...');
+  showLoading('ì¢í© ìí¸ìì ë°ì´í°ë¥¼ ë¶ë¬ì¤ë ì¤...');
   const err=document.getElementById('c-error');
   const allRows=[];
   const total=DEPT_TABS.length;
@@ -568,7 +568,7 @@ async function loadData(){
       if(!res.ok){const j=await res.json().catch(()=>({}));throw new Error(`${tabName}: ${j?.error?.message||'HTTP '+res.status}`)}
       const json=await res.json();
       loaded++;
-      document.getElementById('loading-msg').textContent=`데이터 로딩 중... (${loaded}/${total}) ${TAB_TO_DEPT[tabName]}`;
+      document.getElementById('loading-msg').textContent=`ë°ì´í° ë¡ë© ì¤... (${loaded}/${total}) ${TAB_TO_DEPT[tabName]}`;
       return{tab:tabName,values:json.values||[]};
     })
   );
@@ -582,18 +582,18 @@ async function loadData(){
   if(allRows.length===0){
     showConnect();
     const err2=document.getElementById('c-error');
-    if(err2) err2.textContent='❌ 데이터가 없습니다. API 키 또는 시트 공유 설정을 확인하세요.';
+    if(err2) err2.textContent='â ë°ì´í°ê° ììµëë¤. API í¤ ëë ìí¸ ê³µì  ì¤ì ì íì¸íì¸ì.';
     return;
   }
 
-  // 부서 필터링: admin은 전체, user는 본인 부서만
+  // ë¶ì íí°ë§: adminì ì ì²´, userë ë³¸ì¸ ë¶ìë§
   if(USER && USER.role !== 'admin' && USER.dept){
-    RAW = allRows.filter(r => r.부서 === USER.dept);
+    RAW = allRows.filter(r => r.ë¶ì === USER.dept);
   } else {
     RAW = allRows;
   }
 
-  // 헤더 사용자 정보 표시
+  // í¤ë ì¬ì©ì ì ë³´ íì
   if(USER){
     const badge = document.getElementById('user-badge');
     if(badge){ badge.style.display='flex'; }
@@ -602,26 +602,26 @@ async function loadData(){
     const nameEl = document.getElementById('user-name');
     if(nameEl) nameEl.textContent = USER.name;
     const deptEl = document.getElementById('user-dept-badge');
-    if(deptEl) deptEl.textContent = USER.role==='admin' ? '관리자' : (USER.dept||'알 수 없음');
+    if(deptEl) deptEl.textContent = USER.role==='admin' ? 'ê´ë¦¬ì' : (USER.dept||'ì ì ìì');
   }
 
   initDash();
 }
 
-// ══ PARSE ════════════════════════════════════════
-// import 탭 구조: 행4=헤더(지출종류 | N월 지출 plan | N월 지출 결과 | 비고 | ...)
-// 행7~: 지출종류별 데이터
+// ââ PARSE ââââââââââââââââââââââââââââââââââââââââ
+// import í­ êµ¬ì¡°: í4=í¤ë(ì§ì¶ì¢ë¥ | Nì ì§ì¶ plan | Nì ì§ì¶ ê²°ê³¼ | ë¹ê³  | ...)
+// í7~: ì§ì¶ì¢ë¥ë³ ë°ì´í°
 function parseTab(values,deptName){
   if(!values||values.length<5)return[];
 
-  // 헤더 행 찾기: 'Expense Type' 셀이 정확히 일치 + 같은 행에 'Month'도 있어야 진짜 헤더
-  // (FN Clara처럼 행1에 유사 문자열이 있어도 오감지 방지)
+  // í¤ë í ì°¾ê¸°: 'Expense Type' ìì´ ì íí ì¼ì¹ + ê°ì íì 'Month'ë ìì´ì¼ ì§ì§ í¤ë
+  // (FN Claraì²ë¼ í1ì ì ì¬ ë¬¸ìì´ì´ ìì´ë ì¤ê°ì§ ë°©ì§)
   let hi=-1;
   for(let i=0;i<Math.min(10,values.length);i++){
     const r=values[i];
     if(!r)continue;
-    if(r.some(c=>{const s=String(c||'').trim().toLowerCase();return s==='expense type'||s==='지출종류';})){
-      if(r.some(c=>{const s=String(c||'').trim().toLowerCase();return s==='month'||s==='월'||s.includes('planned expense')||s.includes('지출예정');})){
+    if(r.some(c=>{const s=String(c||'').trim().toLowerCase();return s==='expense type'||s==='ì§ì¶ì¢ë¥';})){
+      if(r.some(c=>{const s=String(c||'').trim().toLowerCase();return s==='month'||s==='ì'||s.includes('planned expense')||s.includes('ì§ì¶ìì ');})){
         hi=i;break;
       }
     }
@@ -630,13 +630,13 @@ function parseTab(values,deptName){
 
   const headers=values[hi].map(c=>String(c||'').trim().toLowerCase());
 
-  // 핵심 컬럼 인덱스
-  const iMonth  = headers.findIndex(h=>h==='month'||h==='월');
-  const iType   = headers.findIndex(h=>h==='expense type'||h==='지출종류');
-  const iEntity = headers.findIndex(h=>h==='paying entity'||h==='지출법인');
-  const iVendor = headers.findIndex(h=>h==='vendor'||h==='거래처');
-  const iPlan   = headers.findIndex(h=>h==='planned amount (krw)'||h==='예정 원화환산액');
-  const iActual = headers.findIndex(h=>h==='actual amount (krw)'||h==='결과 원화환산액'||h==='지출 원화환산액');
+  // íµì¬ ì»¬ë¼ ì¸ë±ì¤
+  const iMonth  = headers.findIndex(h=>h==='month'||h==='ì');
+  const iType   = headers.findIndex(h=>h==='expense type'||h==='ì§ì¶ì¢ë¥');
+  const iEntity = headers.findIndex(h=>h==='paying entity'||h==='ì§ì¶ë²ì¸');
+  const iVendor = headers.findIndex(h=>h==='vendor'||h==='ê±°ëì²');
+  const iPlan   = headers.findIndex(h=>h==='planned amount (krw)'||h==='ìì  ìííì°ì¡');
+  const iActual = headers.findIndex(h=>h==='actual amount (krw)'||h==='ê²°ê³¼ ìííì°ì¡'||h==='ì§ì¶ ìííì°ì¡');
 
   if(iType<0||(iPlan<0&&iActual<0))return[];
 
@@ -646,33 +646,33 @@ function parseTab(values,deptName){
     if(!row||row.length===0)continue;
 
     const type=String(row[iType]||'').trim();
-    // 유효하지 않은 행 스킵
-    if(!type||type==='지출종류'||type==='expense type'||type==='부서'||type==='team')continue;
+    // ì í¨íì§ ìì í ì¤íµ
+    if(!type||type==='ì§ì¶ì¢ë¥'||type==='expense type'||type==='ë¶ì'||type==='team')continue;
 
     const pv = iPlan>=0 ? num(row[iPlan]) : 0;
     const av = iActual>=0 ? num(row[iActual]) : 0;
     if(pv===0&&av===0)continue;
 
-    // 월 파싱: "2월", "2", "2026-02-12" 등
+    // ì íì±: "2ì", "2", "2026-02-12" ë±
     let month=0;
     if(iMonth>=0&&row[iMonth]){
       const ms=String(row[iMonth]).trim();
       const m1=ms.match(/(\d{4})[.\-\/](\d{1,2})/);
       if(m1) month=parseInt(m1[2]);
       else{
-        const m2=ms.match(/^(\d{1,2})월?$/);
+        const m2=ms.match(/^(\d{1,2})ì?$/);
         if(m2) month=parseInt(m2[1]);
       }
     }
 
     rows.push({
-      부서:   deptName,
-      월:     month,
-      지출종류: type,
-      지출법인: iEntity>=0?String(row[iEntity]||'').trim():'',
-      거래처:  iVendor>=0?String(row[iVendor]||'').trim():'',
-      예정원화: pv,
-      실적원화: av,
+      ë¶ì:   deptName,
+      ì:     month,
+      ì§ì¶ì¢ë¥: type,
+      ì§ì¶ë²ì¸: iEntity>=0?String(row[iEntity]||'').trim():'',
+      ê±°ëì²:  iVendor>=0?String(row[iVendor]||'').trim():'',
+      ìì ìí: pv,
+      ì¤ì ìí: av,
     });
   }
   return rows;
@@ -680,7 +680,7 @@ function parseTab(values,deptName){
 
 async function refreshData(){if(API_KEY&&API_KEY!=='sample')await loadData()}
 
-// ══ 자동 새로고침 (10분) ════════════════════════
+// ââ ìë ìë¡ê³ ì¹¨ (10ë¶) ââââââââââââââââââââââââ
 let AUTO_TIMER = null;
 let CD_TIMER = null;
 const AUTO_SEC = 10 * 60;
@@ -712,76 +712,76 @@ async function refreshData(){
     startAutoRefresh();
   }
 }
-// ══ INIT ═════════════════════════════════════════
+// ââ INIT âââââââââââââââââââââââââââââââââââââââââ
 function initDash(){
-  const months=[...new Set(RAW.map(r=>r.월).filter(m=>m>0))].sort((a,b)=>a-b);
-  const depts=[...new Set(RAW.map(r=>r.부서).filter(Boolean))].sort();
-  const types=[...new Set(RAW.map(r=>r.지출종류).filter(Boolean))].sort();
-  fill('f-month',months,m=>LANG==='ko'?m+'월':m+'M','fAllMonth');fill('f-dept',depts,null,'fAllDept');fill('f-type',types,null,'fAllType');
+  const months=[...new Set(RAW.map(r=>r.ì).filter(m=>m>0))].sort((a,b)=>a-b);
+  const depts=[...new Set(RAW.map(r=>r.ë¶ì).filter(Boolean))].sort();
+  const types=[...new Set(RAW.map(r=>r.ì§ì¶ì¢ë¥).filter(Boolean))].sort();
+  fill('f-month',months,m=>LANG==='ko'?m+'ì':m+'M','fAllMonth');fill('f-dept',depts,null,'fAllDept');fill('f-type',types,null,'fAllType');
   ['f-month','f-dept','f-type'].forEach(id=>document.getElementById(id).onchange=render);
-  showDash('종합 시트 연결됨');
+  showDash('ì¢í© ìí¸ ì°ê²°ë¨');
   render();
 }
 function fill(id,vals,lbl,tkey){const s=document.getElementById(id),f=s.options[0];if(tkey)f.text=t(tkey);s.innerHTML='';s.appendChild(f);vals.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=lbl?lbl(v):v;s.appendChild(o)})}
 
-// ══ SAMPLE ═══════════════════════════════════════
+// ââ SAMPLE âââââââââââââââââââââââââââââââââââââââ
 function useSample(){
-  USER = {email:'sample@3i.ai', name:'샘플 사용자', picture:'', dept:null, role:'admin'};
+  USER = {email:'sample@3i.ai', name:'ìí ì¬ì©ì', picture:'', dept:null, role:'admin'};
   const D=['GA','HR','FN Clara','FN Lena','SCM','Pivo EQ','Pivo RE','B Sales','HW','IP&Gov','IT'];
   const T=['Employee Benefits','Logistics','Travel Expenses','Advertising','Service Fee (Agency)','Service Fee (Etc)','Rent','Recruiting Fee','Entertainment expenses','Supplies Expenses'];
   const E=['3i Inc.','Pivo Inc.'];
   const rows=[];
   for(let m=1;m<=4;m++) D.forEach(d=>T.slice(0,3+Math.floor(Math.random()*4)).forEach(t=>{
     const p=Math.round(1e6+Math.random()*3e7),r=m<=CUR_MONTH?0.6+Math.random()*.7:0;
-    rows.push({부서:d,월:m,지출종류:t,지출법인:E[Math.floor(Math.random()*2)],예정원화:p,실적원화:Math.round(p*r)});
+    rows.push({ë¶ì:d,ì:m,ì§ì¶ì¢ë¥:t,ì§ì¶ë²ì¸:E[Math.floor(Math.random()*2)],ìì ìí:p,ì¤ì ìí:Math.round(p*r)});
   }));
   RAW=rows;API_KEY='sample';
-  initDash();document.getElementById('sync-lbl').textContent='샘플 데이터';
+  initDash();document.getElementById('sync-lbl').textContent='ìí ë°ì´í°';
 }
 
-// ══ FILTER ═══════════════════════════════════════
+// ââ FILTER âââââââââââââââââââââââââââââââââââââââ
 function getF(){
   const fm=document.getElementById('f-month').value,fd=document.getElementById('f-dept').value,ft=document.getElementById('f-type').value;
-  return RAW.filter(r=>(!fm||r.월==fm)&&(!fd||r.부서===fd)&&(!ft||r.지출종류===ft));
+  return RAW.filter(r=>(!fm||r.ì==fm)&&(!fd||r.ë¶ì===fd)&&(!ft||r.ì§ì¶ì¢ë¥===ft));
 }
 function setView(v,btn){VIEW=v;document.querySelectorAll('.vt').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render()}
 
-// ══ RENDER ═══════════════════════════════════════
+// ââ RENDER âââââââââââââââââââââââââââââââââââââââ
 function render(){const d=getF();rAlerts(d);rKPI(d);rCharts(d);rTable(d)}
 
 function rAlerts(data){
   const w=document.getElementById('alerts-wrap');
 
-  // 부서별 경고
+  // ë¶ìë³ ê²½ê³ 
   const deptItems=[];
-  Object.entries(gBy(data,'부서')).forEach(([dept,rows])=>{
-    const p=sum(rows,'예정원화'),a=sum(rows,'실적원화'),pp=pct(a,p);
-    if(pp>100)deptItems.push({label:dept,tag:'부서',pp,diff:a-p,lv:'over'});
-    else if(pp>95)deptItems.push({label:dept,tag:'부서',pp,diff:p-a,lv:'sos'});
-    else if(pp>90)deptItems.push({label:dept,tag:'부서',pp,diff:p-a,lv:'warn'});
+  Object.entries(gBy(data,'ë¶ì')).forEach(([dept,rows])=>{
+    const p=sum(rows,'ìì ìí'),a=sum(rows,'ì¤ì ìí'),pp=pct(a,p);
+    if(pp>100)deptItems.push({label:dept,tag:'ë¶ì',pp,diff:a-p,lv:'over'});
+    else if(pp>95)deptItems.push({label:dept,tag:'ë¶ì',pp,diff:p-a,lv:'sos'});
+    else if(pp>90)deptItems.push({label:dept,tag:'ë¶ì',pp,diff:p-a,lv:'warn'});
   });
   deptItems.sort((a,b)=>b.pp-a.pp);
 
-  // 계정과목별 경고
+  // ê³ì ê³¼ëª©ë³ ê²½ê³ 
   const typeItems=[];
-  Object.entries(gBy(data,'지출종류')).forEach(([type,rows])=>{
-    if(!type||type==='기타')return;
-    const p=sum(rows,'예정원화'),a=sum(rows,'실적원화'),pp=pct(a,p);
-    if(pp>100)typeItems.push({label:type,tag:'계정과목',pp,diff:a-p,lv:'over'});
-    else if(pp>95)typeItems.push({label:type,tag:'계정과목',pp,diff:p-a,lv:'sos'});
-    else if(pp>90)typeItems.push({label:type,tag:'계정과목',pp,diff:p-a,lv:'warn'});
+  Object.entries(gBy(data,'ì§ì¶ì¢ë¥')).forEach(([type,rows])=>{
+    if(!type||type==='ê¸°í')return;
+    const p=sum(rows,'ìì ìí'),a=sum(rows,'ì¤ì ìí'),pp=pct(a,p);
+    if(pp>100)typeItems.push({label:type,tag:'ê³ì ê³¼ëª©',pp,diff:a-p,lv:'over'});
+    else if(pp>95)typeItems.push({label:type,tag:'ê³ì ê³¼ëª©',pp,diff:p-a,lv:'sos'});
+    else if(pp>90)typeItems.push({label:type,tag:'ê³ì ê³¼ëª©',pp,diff:p-a,lv:'warn'});
   });
   typeItems.sort((a,b)=>b.pp-a.pp);
 
   const mkA=(it)=>{
-    const icon=it.lv==='over'?'🚨':it.lv==='sos'?'⚠️':'⚡';
-    const tc=it.tag==='부서'?'var(--accent)':'var(--teal)';
+    const icon=it.lv==='over'?'ð¨':it.lv==='sos'?'â ï¸':'â¡';
+    const tc=it.tag==='ë¶ì'?'var(--accent)':'var(--teal)';
     const msg=it.lv==='over'
-      ?`${LANG==='ko'?'예산':'Budget'} <strong>${it.pp.toFixed(1)}%</strong> ${LANG==='ko'?'소진 &mdash; 초과':'burned &mdash; over by'} <strong>${krw(it.diff)}</strong>`
+      ?`${LANG==='ko'?'ìì°':'Budget'} <strong>${it.pp.toFixed(1)}%</strong> ${LANG==='ko'?'ìì§ &mdash; ì´ê³¼':'burned &mdash; over by'} <strong>${krw(it.diff)}</strong>`
       :it.lv==='sos'
-      ?`${LANG==='ko'?'예산':'Budget'} <strong>${it.pp.toFixed(1)}%</strong> ${LANG==='ko'?'소진 &mdash; 잔여':'burned &mdash; remaining'} <strong>${krw(it.diff)}</strong> <span style="color:var(--text3)">${t('alertSosSub')}</span>`
-      :`${LANG==='ko'?'예산':'Budget'} <strong>${it.pp.toFixed(1)}%</strong> ${LANG==='ko'?'소진 &mdash; 잔여':'burned &mdash; remaining'} <strong>${krw(it.diff)}</strong> <span style="color:var(--text3)">${t('alertWarnSub')}</span>`;
-    return `<div class="alert a-${it.lv}" style="flex-wrap:wrap">${icon} <span style="background:${tc}22;color:${tc};border:1px solid ${tc}44;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;margin-right:6px;flex-shrink:0">${it.tag==='부서'?t('alertTagDept'):t('alertTagType')}</span><span class="a-team">[${it.label}]</span>&nbsp;${msg}</div>`;
+      ?`${LANG==='ko'?'ìì°':'Budget'} <strong>${it.pp.toFixed(1)}%</strong> ${LANG==='ko'?'ìì§ &mdash; ìì¬':'burned &mdash; remaining'} <strong>${krw(it.diff)}</strong> <span style="color:var(--text3)">${t('alertSosSub')}</span>`
+      :`${LANG==='ko'?'ìì°':'Budget'} <strong>${it.pp.toFixed(1)}%</strong> ${LANG==='ko'?'ìì§ &mdash; ìì¬':'burned &mdash; remaining'} <strong>${krw(it.diff)}</strong> <span style="color:var(--text3)">${t('alertWarnSub')}</span>`;
+    return `<div class="alert a-${it.lv}" style="flex-wrap:wrap">${icon} <span style="background:${tc}22;color:${tc};border:1px solid ${tc}44;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;margin-right:6px;flex-shrink:0">${it.tag==='ë¶ì'?t('alertTagDept'):t('alertTagType')}</span><span class="a-team">[${it.label}]</span>&nbsp;${msg}</div>`;
   };
 
   let html='';
@@ -797,7 +797,7 @@ function rAlerts(data){
   }
 
   if(!deptItems.length&&!typeItems.length){
-    html=`<div style="display:flex;align-items:center;gap:8px;padding:9px 14px;background:rgba(34,197,94,.06);border:1px solid rgba(34,197,94,.2);border-left:3px solid var(--green);border-radius:9px;font-size:12px;color:var(--green)">${LANG==='ko'?'✅ <strong>모든 부서 및 계정과목</strong>의 예산이 정상 범위입니다.':'✅ All departments and categories are within budget.'}</div>`;
+    html=`<div style="display:flex;align-items:center;gap:8px;padding:9px 14px;background:rgba(34,197,94,.06);border:1px solid rgba(34,197,94,.2);border-left:3px solid var(--green);border-radius:9px;font-size:12px;color:var(--green)">${LANG==='ko'?'â <strong>ëª¨ë  ë¶ì ë° ê³ì ê³¼ëª©</strong>ì ìì°ì´ ì ì ë²ììëë¤.':'â All departments and categories are within budget.'}</div>`;
   }
 
   w.innerHTML=html;
@@ -805,23 +805,23 @@ function rAlerts(data){
 
 
 function rKPI(data){
-  const tp=sum(data,'예정원화'),ta=sum(data,'실적원화'),rem=tp-ta;
-  const un=data.filter(r=>r.월<=CUR_MONTH),pn=sum(un,'예정원화'),an=sum(un,'실적원화'),ppn=pct(an,pn);
-  const deptRows=Object.values(gBy(data,'부서')).filter(r=>sum(r,'실적원화')>0);const ov=deptRows.filter(r=>pct(sum(r,'실적원화'),sum(r,'예정원화'))>100).length;const typeOv=Object.values(gBy(data,'지출종류')).filter(r=>sum(r,'실적원화')>0&&pct(sum(r,'실적원화'),sum(r,'예정원화'))>100).length;
-  const wn=deptRows.filter(r=>{const p=pct(sum(r,'실적원화'),sum(r,'예정원화'));return p>90&&p<=100}).length;
+  const tp=sum(data,'ìì ìí'),ta=sum(data,'ì¤ì ìí'),rem=tp-ta;
+  const un=data.filter(r=>r.ì<=CUR_MONTH),pn=sum(un,'ìì ìí'),an=sum(un,'ì¤ì ìí'),ppn=pct(an,pn);
+  const deptRows=Object.values(gBy(data,'ë¶ì')).filter(r=>sum(r,'ì¤ì ìí')>0);const ov=deptRows.filter(r=>pct(sum(r,'ì¤ì ìí'),sum(r,'ìì ìí'))>100).length;const typeOv=Object.values(gBy(data,'ì§ì¶ì¢ë¥')).filter(r=>sum(r,'ì¤ì ìí')>0&&pct(sum(r,'ì¤ì ìí'),sum(r,'ìì ìí'))>100).length;
+  const wn=deptRows.filter(r=>{const p=pct(sum(r,'ì¤ì ìí'),sum(r,'ìì ìí'));return p>90&&p<=100}).length;
   const bc=ppn>100?'b-o':ppn>95?'b-s':ppn>90?'b-w':'b-ok';
-  const badge=ppn>100?`<span class="kpi-b ${bc}">🚨 ${LANG==='ko'?'초과':'Over'} ${(ppn-100).toFixed(1)}%</span>`
-    :ppn>95?`<span class="kpi-b ${bc}">⚠ ${LANG==='ko'?'잔여':'Left'} ${(100-ppn).toFixed(1)}%</span>`
-    :ppn>90?`<span class="kpi-b ${bc}">⚡ ${LANG==='ko'?'잔여':'Left'} ${(100-ppn).toFixed(1)}%</span>`
-    :`<span class="kpi-b ${bc}">✓ ${LANG==='ko'?'잔여':'Left'} ${(100-ppn).toFixed(1)}%</span>`;
+  const badge=ppn>100?`<span class="kpi-b ${bc}">ð¨ ${LANG==='ko'?'ì´ê³¼':'Over'} ${(ppn-100).toFixed(1)}%</span>`
+    :ppn>95?`<span class="kpi-b ${bc}">â  ${LANG==='ko'?'ìì¬':'Left'} ${(100-ppn).toFixed(1)}%</span>`
+    :ppn>90?`<span class="kpi-b ${bc}">â¡ ${LANG==='ko'?'ìì¬':'Left'} ${(100-ppn).toFixed(1)}%</span>`
+    :`<span class="kpi-b ${bc}">â ${LANG==='ko'?'ìì¬':'Left'} ${(100-ppn).toFixed(1)}%</span>`;
   document.getElementById('kpi-row').innerHTML=`
     <div class="kpi kb"><div class="kpi-l">${t('kpiTotalBudget')}</div><div class="kpi-v">${krw(tp)}</div><div class="kpi-s">${t('kpiKrwBase')}</div></div>
     <div class="kpi kt"><div class="kpi-l">${t('kpiActual')}</div><div class="kpi-v">${krw(ta)}</div><div class="kpi-s">${t('kpiActualKrw')}</div></div>
     <div class="kpi ${rem<0?'kr':'kg'}"><div class="kpi-l">${t('kpiRemain')}</div><div class="kpi-v ${rem<0?'cn':'cp'}">${rem<0?'-':''}${krw(Math.abs(rem))}</div><div class="kpi-s">${rem<0?t('kpiOverBudget'):t('kpiAvailable')}</div></div>
-    <div class="kpi ki"><div class="kpi-l">${CUR_MONTH}${LANG==='ko'?'월까지 소진율':t('kpiRateUntil')}</div><div class="kpi-v" style="color:${PC(ppn)}">${ppn.toFixed(1)}%</div>${badge}</div>
+    <div class="kpi ki"><div class="kpi-l">${CUR_MONTH}${LANG==='ko'?'ìê¹ì§ ìì§ì¨':t('kpiRateUntil')}</div><div class="kpi-v" style="color:${PC(ppn)}">${ppn.toFixed(1)}%</div>${badge}</div>
     <div class="kpi ky"><div class="kpi-l">${t('kpiOverDept')}</div><div class="kpi-v"><span class="cv">${ov}</span><span style="color:var(--text2);font-size:16px"> / </span><span class="cw2">${wn}</span></div><div class="kpi-s">${t('kpiOverDeptSub')}</div></div>
     <div class="kpi kr"><div class="kpi-l">${t('kpiOverType')}</div><div class="kpi-v cv">${typeOv}</div><div class="kpi-s">${t('kpiOverTypeSub')}</div></div>
-    <div class="kpi kt"><div class="kpi-l">${t('kpiItems')}</div><div class="kpi-v">${data.length.toLocaleString()}</div><div class="kpi-s">${[...new Set(data.map(r=>r.부서))].length} ${t('kpiDepts')}</div></div>`;
+    <div class="kpi kt"><div class="kpi-l">${t('kpiItems')}</div><div class="kpi-v">${data.length.toLocaleString()}</div><div class="kpi-s">${[...new Set(data.map(r=>r.ë¶ì))].length} ${t('kpiDepts')}</div></div>`;
 }
 
 // CHARTS
@@ -833,11 +833,11 @@ function mkBar(id,lb,pl,ac){
   CHARTS[id]=new Chart(ctx,{type:'bar',data:{labels:lb,datasets:[
     {label:t('legendBudget'),data:pl,backgroundColor:'rgba(59,130,246,.2)',borderColor:'#3b82f6',borderWidth:1.5,borderRadius:4},
     {label:t('legendActual'),data:ac,backgroundColor:ac.map((a,i)=>a>pl[i]?'rgba(239,68,68,.6)':'rgba(20,184,166,.6)'),borderColor:ac.map((a,i)=>a>pl[i]?'#ef4444':'#14b8a6'),borderWidth:1.5,borderRadius:4}
-  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#7e8fb5',font:{size:11},padding:12,boxWidth:9}},tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${Math.round(c.raw).toLocaleString()}원`}}},scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#7e8fb5',font:{size:10}}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#7e8fb5',font:{size:10},callback:v=>krw(v)}}}}});
+  ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#7e8fb5',font:{size:11},padding:12,boxWidth:9}},tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${Math.round(c.raw).toLocaleString()}ì`}}},scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#7e8fb5',font:{size:10}}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#7e8fb5',font:{size:10},callback:v=>krw(v)}}}}});
 }
 function mkDo(id,lb,vl){
   const ctx=document.getElementById(id)?.getContext('2d');if(!ctx)return;
-  CHARTS[id]=new Chart(ctx,{type:'doughnut',data:{labels:lb,datasets:[{data:vl,backgroundColor:PAL,borderColor:'#121828',borderWidth:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{color:'#7e8fb5',font:{size:10},padding:7,boxWidth:9}},tooltip:{callbacks:{label:c=>` ${c.label}: ${Math.round(c.raw).toLocaleString()}원`}}}}});
+  CHARTS[id]=new Chart(ctx,{type:'doughnut',data:{labels:lb,datasets:[{data:vl,backgroundColor:PAL,borderColor:'#121828',borderWidth:2}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{color:'#7e8fb5',font:{size:10},padding:7,boxWidth:9}},tooltip:{callbacks:{label:c=>` ${c.label}: ${Math.round(c.raw).toLocaleString()}ì`}}}}});
 }
 function mkBH(id,lb,pcts){
   const ctx=document.getElementById(id)?.getContext('2d');if(!ctx)return;
@@ -845,7 +845,7 @@ function mkBH(id,lb,pcts){
 }
 function mkLn(id,lb,ds){
   const ctx=document.getElementById(id)?.getContext('2d');if(!ctx)return;
-  CHARTS[id]=new Chart(ctx,{type:'line',data:{labels:lb,datasets:ds},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#7e8fb5',font:{size:11},padding:12,boxWidth:9}},tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${Math.round(c.raw).toLocaleString()}원`}}},scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#7e8fb5',font:{size:10}}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#7e8fb5',font:{size:10},callback:v=>krw(v)}}}}});
+  CHARTS[id]=new Chart(ctx,{type:'line',data:{labels:lb,datasets:ds},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#7e8fb5',font:{size:11},padding:12,boxWidth:9}},tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${Math.round(c.raw).toLocaleString()}ì`}}},scales:{x:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#7e8fb5',font:{size:10}}},y:{grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#7e8fb5',font:{size:10},callback:v=>krw(v)}}}}});
 }
 
 function rCharts(data){dA();const a=document.getElementById('chart-area');a.innerHTML='';
@@ -853,56 +853,56 @@ function rCharts(data){dA();const a=document.getElementById('chart-area');a.inne
 }
 
 function rDept(data,a){
-  const by=gBy(data,'부서'),lb=Object.keys(by).sort();
-  const pl=lb.map(k=>sum(by[k],'예정원화')),ac=lb.map(k=>sum(by[k],'실적원화'));
-  const ms=[...new Set(data.map(r=>r.월).filter(m=>m>0))].sort((a,b)=>a-b),bm=gBy(data,'월');
-  a.innerHTML=`<div class="cg2"><div class="cc"><div class="ct">📊 <em>${t('cDeptBar')}</em></div>${cH('c1')}</div><div class="cc"><div class="ct">🎯 <em>${t('cDeptBurn')}</em></div>${cH('c2')}</div></div><div class="cg3"><div class="cc"><div class="ct">📈 <em>${t('cMonthly')}</em></div>${cH('c3','h220')}</div><div class="cc"><div class="ct">🥧 <em>${t('cBudgetPie')}</em></div>${cH('c4','h220')}</div><div class="cc"><div class="ct">🥧 <em>${t('cActualPie')}</em></div>${cH('c5','h220')}</div></div>`;
+  const by=gBy(data,'ë¶ì'),lb=Object.keys(by).sort();
+  const pl=lb.map(k=>sum(by[k],'ìì ìí')),ac=lb.map(k=>sum(by[k],'ì¤ì ìí'));
+  const ms=[...new Set(data.map(r=>r.ì).filter(m=>m>0))].sort((a,b)=>a-b),bm=gBy(data,'ì');
+  a.innerHTML=`<div class="cg2"><div class="cc"><div class="ct">ð <em>${t('cDeptBar')}</em></div>${cH('c1')}</div><div class="cc"><div class="ct">ð¯ <em>${t('cDeptBurn')}</em></div>${cH('c2')}</div></div><div class="cg3"><div class="cc"><div class="ct">ð <em>${t('cMonthly')}</em></div>${cH('c3','h220')}</div><div class="cc"><div class="ct">ð¥§ <em>${t('cBudgetPie')}</em></div>${cH('c4','h220')}</div><div class="cc"><div class="ct">ð¥§ <em>${t('cActualPie')}</em></div>${cH('c5','h220')}</div></div>`;
   mkBar('c1',lb,pl,ac);mkBH('c2',lb,lb.map((k,i)=>pct(ac[i],pl[i])));
-  mkBar('c3',ms.map(m=>LANG==='ko'?m+'월':m+'M'),ms.map(m=>sum(bm[m]||[],'예정원화')),ms.map(m=>sum(bm[m]||[],'실적원화')));
+  mkBar('c3',ms.map(m=>LANG==='ko'?m+'ì':m+'M'),ms.map(m=>sum(bm[m]||[],'ìì ìí')),ms.map(m=>sum(bm[m]||[],'ì¤ì ìí')));
   mkDo('c4',lb,pl);mkDo('c5',lb,ac);
   document.getElementById('tbl-title').textContent=t('tblDept');
 }
 function rType(data,a){
-  const ent=Object.entries(gBy(data,'지출종류')).map(([k,v])=>({k,p:sum(v,'예정원화'),ac:sum(v,'실적원화')})).sort((a,b)=>b.p-a.p);
+  const ent=Object.entries(gBy(data,'ì§ì¶ì¢ë¥')).map(([k,v])=>({k,p:sum(v,'ìì ìí'),ac:sum(v,'ì¤ì ìí')})).sort((a,b)=>b.p-a.p);
   const lb=ent.map(e=>e.k),pl=ent.map(e=>e.p),ac=ent.map(e=>e.ac);
-  a.innerHTML=`<div class="cg2"><div class="cc"><div class="ct">📂 <em>${t('cTypeBar')}</em></div>${cH('c1','h300')}</div><div class="cc"><div class="ct">🎯 <em>${t('cTypeBurn')}</em></div>${cH('c2','h300')}</div></div><div class="cg2"><div class="cc"><div class="ct">🥧 <em>${t('cBudgetPie')}</em></div>${cH('c3','h240')}</div><div class="cc"><div class="ct">🥧 <em>${t('cActualPie')}</em></div>${cH('c4','h240')}</div></div>`;
+  a.innerHTML=`<div class="cg2"><div class="cc"><div class="ct">ð <em>${t('cTypeBar')}</em></div>${cH('c1','h300')}</div><div class="cc"><div class="ct">ð¯ <em>${t('cTypeBurn')}</em></div>${cH('c2','h300')}</div></div><div class="cg2"><div class="cc"><div class="ct">ð¥§ <em>${t('cBudgetPie')}</em></div>${cH('c3','h240')}</div><div class="cc"><div class="ct">ð¥§ <em>${t('cActualPie')}</em></div>${cH('c4','h240')}</div></div>`;
   mkBar('c1',lb,pl,ac);mkBH('c2',lb,ent.map((e,i)=>pct(ac[i],pl[i])));mkDo('c3',lb,pl);mkDo('c4',lb,ac);
   document.getElementById('tbl-title').textContent=t('tblType');
 }
 function rEnt(data,a){
-  const by=gBy(data,'지출법인'),lb=Object.keys(by).filter(Boolean).sort();
-  const pl=lb.map(k=>sum(by[k],'예정원화')),ac=lb.map(k=>sum(by[k],'실적원화'));
-  const ms=[...new Set(data.map(r=>r.월).filter(m=>m>0))].sort((a,b)=>a-b);
-  a.innerHTML=`<div class="cg2"><div class="cc"><div class="ct">🏦 <em>${t('cEntBar')}</em></div>${cH('c1')}</div><div class="cc"><div class="ct">📈 <em>${t('cEntLine')}</em></div>${cH('c2')}</div></div><div class="cg2"><div class="cc"><div class="ct">🥧 <em>${t('cEntBudget')}</em></div>${cH('c3','h220')}</div><div class="cc"><div class="ct">🥧 <em>${t('cEntActual')}</em></div>${cH('c4','h220')}</div></div>`;
+  const by=gBy(data,'ì§ì¶ë²ì¸'),lb=Object.keys(by).filter(Boolean).sort();
+  const pl=lb.map(k=>sum(by[k],'ìì ìí')),ac=lb.map(k=>sum(by[k],'ì¤ì ìí'));
+  const ms=[...new Set(data.map(r=>r.ì).filter(m=>m>0))].sort((a,b)=>a-b);
+  a.innerHTML=`<div class="cg2"><div class="cc"><div class="ct">ð¦ <em>${t('cEntBar')}</em></div>${cH('c1')}</div><div class="cc"><div class="ct">ð <em>${t('cEntLine')}</em></div>${cH('c2')}</div></div><div class="cg2"><div class="cc"><div class="ct">ð¥§ <em>${t('cEntBudget')}</em></div>${cH('c3','h220')}</div><div class="cc"><div class="ct">ð¥§ <em>${t('cEntActual')}</em></div>${cH('c4','h220')}</div></div>`;
   mkBar('c1',lb,pl,ac);
-  mkLn('c2',ms.map(m=>LANG==='ko'?m+'월':m+'M'),lb.map((e,i)=>({label:e,data:ms.map(m=>sum((by[e]||[]).filter(r=>r.월===m),'실적원화')),borderColor:PAL[i],backgroundColor:PAL[i]+'22',tension:.4,fill:false,pointRadius:4})));
+  mkLn('c2',ms.map(m=>LANG==='ko'?m+'ì':m+'M'),lb.map((e,i)=>({label:e,data:ms.map(m=>sum((by[e]||[]).filter(r=>r.ì===m),'ì¤ì ìí')),borderColor:PAL[i],backgroundColor:PAL[i]+'22',tension:.4,fill:false,pointRadius:4})));
   mkDo('c3',lb,pl);mkDo('c4',lb,ac);
   document.getElementById('tbl-title').textContent=t('tblEntity');
 }
 function rMonth(data,a){
-  const ms=[...new Set(data.map(r=>r.월).filter(m=>m>0))].sort((a,b)=>a-b),bm=gBy(data,'월');
-  const pl=ms.map(m=>sum(bm[m]||[],'예정원화')),ac=ms.map(m=>sum(bm[m]||[],'실적원화'));
+  const ms=[...new Set(data.map(r=>r.ì).filter(m=>m>0))].sort((a,b)=>a-b),bm=gBy(data,'ì');
+  const pl=ms.map(m=>sum(bm[m]||[],'ìì ìí')),ac=ms.map(m=>sum(bm[m]||[],'ì¤ì ìí'));
   let cp=0,ca=0;const cpl=[],cal=[];ms.forEach((_,i)=>{cp+=pl[i];ca+=ac[i];cpl.push(cp);cal.push(ca)});
-  const types=[...new Set(data.map(r=>r.지출종류).filter(Boolean))].slice(0,8);
-  a.innerHTML=`<div class="cg2"><div class="cc"><div class="ct">📅 <em>${t('cMonBar')}</em></div>${cH('c1')}</div><div class="cc"><div class="ct">📈 <em>${t('cCumLine')}</em></div>${cH('c2')}</div></div><div class="cg2"><div class="cc"><div class="ct">🎯 <em>${t('cMonBurn')}</em></div>${cH('c3','h220')}</div><div class="cc"><div class="ct">📊 <em>${t('cMonStack')}</em></div>${cH('c4','h220')}</div></div>`;
-  mkBar('c1',ms.map(m=>LANG==='ko'?m+'월':m+'M'),pl,ac);
-  mkLn('c2',ms.map(m=>LANG==='ko'?m+'월':m+'M'),[{label:t('legendCumBgt'),data:cpl,borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.08)',tension:.4,fill:true,pointRadius:4},{label:t('legendCumAct'),data:cal,borderColor:'#14b8a6',backgroundColor:'rgba(20,184,166,.08)',tension:.4,fill:true,pointRadius:4}]);
-  mkBH('c3',ms.map(m=>LANG==='ko'?m+'월':m+'M'),ms.map((_,i)=>pct(ac[i],pl[i])));
-  const ctx=document.getElementById('c4')?.getContext('2d');if(ctx){CHARTS['c4']=new Chart(ctx,{type:'bar',data:{labels:ms.map(m=>LANG==='ko'?m+'월':m+'M'),datasets:types.map((t,i)=>({label:t,data:ms.map(m=>sum((bm[m]||[]).filter(r=>r.지출종류===t),'실적원화')),backgroundColor:PAL[i]+'bb',borderRadius:2}))},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#7e8fb5',font:{size:10},boxWidth:7,padding:7}}},scales:{x:{stacked:true,grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#7e8fb5',font:{size:10}}},y:{stacked:true,grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#7e8fb5',font:{size:10},callback:v=>krw(v)}}}}})}
+  const types=[...new Set(data.map(r=>r.ì§ì¶ì¢ë¥).filter(Boolean))].slice(0,8);
+  a.innerHTML=`<div class="cg2"><div class="cc"><div class="ct">ð <em>${t('cMonBar')}</em></div>${cH('c1')}</div><div class="cc"><div class="ct">ð <em>${t('cCumLine')}</em></div>${cH('c2')}</div></div><div class="cg2"><div class="cc"><div class="ct">ð¯ <em>${t('cMonBurn')}</em></div>${cH('c3','h220')}</div><div class="cc"><div class="ct">ð <em>${t('cMonStack')}</em></div>${cH('c4','h220')}</div></div>`;
+  mkBar('c1',ms.map(m=>LANG==='ko'?m+'ì':m+'M'),pl,ac);
+  mkLn('c2',ms.map(m=>LANG==='ko'?m+'ì':m+'M'),[{label:t('legendCumBgt'),data:cpl,borderColor:'#3b82f6',backgroundColor:'rgba(59,130,246,.08)',tension:.4,fill:true,pointRadius:4},{label:t('legendCumAct'),data:cal,borderColor:'#14b8a6',backgroundColor:'rgba(20,184,166,.08)',tension:.4,fill:true,pointRadius:4}]);
+  mkBH('c3',ms.map(m=>LANG==='ko'?m+'ì':m+'M'),ms.map((_,i)=>pct(ac[i],pl[i])));
+  const ctx=document.getElementById('c4')?.getContext('2d');if(ctx){CHARTS['c4']=new Chart(ctx,{type:'bar',data:{labels:ms.map(m=>LANG==='ko'?m+'ì':m+'M'),datasets:types.map((t,i)=>({label:t,data:ms.map(m=>sum((bm[m]||[]).filter(r=>r.ì§ì¶ì¢ë¥===t),'ì¤ì ìí')),backgroundColor:PAL[i]+'bb',borderRadius:2}))},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#7e8fb5',font:{size:10},boxWidth:7,padding:7}}},scales:{x:{stacked:true,grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#7e8fb5',font:{size:10}}},y:{stacked:true,grid:{color:'rgba(255,255,255,.04)'},ticks:{color:'#7e8fb5',font:{size:10},callback:v=>krw(v)}}}}})}
   document.getElementById('tbl-title').textContent=t('tblMonth');
 }
 
 function rTable(data){
-  const K=VIEW==='dept'?'부서':VIEW==='type'?'지출종류':VIEW==='entity'?'지출법인':'월';
-  const ents=Object.entries(gBy(data,K)).map(([k,rows])=>({k,p:sum(rows,'예정원화'),a:sum(rows,'실적원화')})).sort((a,b)=>b.p-a.p);
+  const K=VIEW==='dept'?'ë¶ì':VIEW==='type'?'ì§ì¶ì¢ë¥':VIEW==='entity'?'ì§ì¶ë²ì¸':'ì';
+  const ents=Object.entries(gBy(data,K)).map(([k,rows])=>({k,p:sum(rows,'ìì ìí'),a:sum(rows,'ì¤ì ìí')})).sort((a,b)=>b.p-a.p);
   const iM=VIEW==='month';
-  let h=`<thead><tr><th>${iM?t('vMonth').replace(/[📅 ]/g,''):K}</th><th>${t('colBudget')}</th><th>${t('colActual')}</th><th>${t('colDiff')}</th><th>${t('colBurn')}</th></tr></thead><tbody>`;
+  let h=`<thead><tr><th>${iM?t('vMonth').replace(/[ð ]/g,''):K}</th><th>${t('colBudget')}</th><th>${t('colActual')}</th><th>${t('colDiff')}</th><th>${t('colBurn')}</th></tr></thead><tbody>`;
   for(const{k,p,a}of ents){
     const pp=pct(a,p),diff=a-p,bc=PC(pp);
-    h+=`<tr class="${RCL(pp)}"><td>${iM?k+'월':k}</td><td>${Math.round(p).toLocaleString()}원</td><td>${Math.round(a).toLocaleString()}원</td><td class="${diff>0?'cn':'cp'}">${diff>0?'+':''}${Math.round(diff).toLocaleString()}원</td><td><div class="pc"><div class="pb"><div class="pf" style="width:${Math.min(pp,100)}%;background:${bc}"></div></div><span class="pn ${PCL(pp)}">${pp.toFixed(1)}%</span></div></td></tr>`;
+    h+=`<tr class="${RCL(pp)}"><td>${iM?k+'ì':k}</td><td>${Math.round(p).toLocaleString()}ì</td><td>${Math.round(a).toLocaleString()}ì</td><td class="${diff>0?'cn':'cp'}">${diff>0?'+':''}${Math.round(diff).toLocaleString()}ì</td><td><div class="pc"><div class="pb"><div class="pf" style="width:${Math.min(pp,100)}%;background:${bc}"></div></div><span class="pn ${PCL(pp)}">${pp.toFixed(1)}%</span></div></td></tr>`;
   }
-  const tp=sum(data,'예정원화'),ta=sum(data,'실적원화'),td=ta-tp,tpp=pct(ta,tp);
-  h+=`<tr style="background:var(--surface2);font-weight:700"><td>${t('colTotal')}</td><td>${Math.round(tp).toLocaleString()}원</td><td>${Math.round(ta).toLocaleString()}원</td><td class="${td>0?'cn':'cp'}">${td>0?'+':''}${Math.round(td).toLocaleString()}원</td><td><div class="pc"><div class="pb"><div class="pf" style="width:${Math.min(tpp,100)}%;background:${PC(tpp)}"></div></div><span class="pn ${PCL(tpp)}">${tpp.toFixed(1)}%</span></div></td></tr></tbody>`;
+  const tp=sum(data,'ìì ìí'),ta=sum(data,'ì¤ì ìí'),td=ta-tp,tpp=pct(ta,tp);
+  h+=`<tr style="background:var(--surface2);font-weight:700"><td>${t('colTotal')}</td><td>${Math.round(tp).toLocaleString()}ì</td><td>${Math.round(ta).toLocaleString()}ì</td><td class="${td>0?'cn':'cp'}">${td>0?'+':''}${Math.round(td).toLocaleString()}ì</td><td><div class="pc"><div class="pb"><div class="pf" style="width:${Math.min(tpp,100)}%;background:${PC(tpp)}"></div></div><span class="pn ${PCL(tpp)}">${tpp.toFixed(1)}%</span></div></td></tr></tbody>`;
   document.getElementById('main-table').innerHTML=h;
 }
 
